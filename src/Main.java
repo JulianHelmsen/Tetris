@@ -44,9 +44,6 @@ public class Main {
 		tile.draw(g2d, cellSize);
 	}
 
-	public static void mousePressed(int button) {
-
-	}
 
 	public static void keyPressed(int key) {
 		if(gameOver) {
