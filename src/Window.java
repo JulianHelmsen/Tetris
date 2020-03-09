@@ -29,7 +29,6 @@ public class Window implements MouseListener, KeyListener {
 				Main.draw((Graphics2D) g, this.getBounds());
 			}
 		});
-		this.jframe.addMouseListener(this);
 		this.jframe.addKeyListener(this);
 		this.jframe.setLocationRelativeTo(null);
 		this.jframe.setVisible(true);
@@ -67,20 +66,5 @@ public class Window implements MouseListener, KeyListener {
 		
 	}
 
-	@Override
-	public void mousePressed(MouseEvent e) {
-		Main.mousePressed(e.getButton());
-	}
-
-	@Override
-	public void mouseReleased(MouseEvent e) {}
-
-	@Override
-	public void mouseClicked(MouseEvent e) {}
-
-	@Override
-	public void mouseEntered(MouseEvent e) {}
-
-	@Override
-	public void mouseExited(MouseEvent e) {}
+	
 }
